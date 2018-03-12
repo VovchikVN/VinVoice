@@ -1,0 +1,159 @@
+  
+    <div class="bg-overlay"></div>
+
+        <div class="container-fluid">
+
+ <div class="row main-content">
+    <div class="logIn-signUp">
+        <% if (login == undefined) { %>
+          <a href="/login" class="cst-btn" type="submit">Вхід</a>
+        <% } %>
+       
+        <% if (login != undefined) { %>
+            <div class="cst-btn">
+                <span>Привіт, </span>
+                <span> <%=  name %> </span>
+            </div>
+            <a href="/logout" class="cst-btn" type="submit">Вихід</a>
+        <% } %>
+        
+
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="sidebar-menu">
+            
+            <div class="logo-wrapper">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="Circle Template">
+                        <span>Vin Voice project</span>
+                    </a>
+                </h1>
+                <span>You have question, <br> we have <i>answer!</i></span>
+            </div> <!-- /.logo-wrapper -->
+            
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li><a class="homebutton" href="#">Головна</a></li>
+                    <li><a class="show-1" href="#">Опис</a></li>
+                    <li><a class="show-2" href="#">Сервіси</a></li>
+                    <li><a class="show-3" href="#">best shots</a></li>
+                    <li><a class="show-4" href="#" onclick="templatemo_map();">Контакти</a></li>
+                     <li><a href="/chatt" >Міський чат</a></li>
+                    <!-- <li><a rel="nofollow" href="http://www.facebook.com/templatemo" target="_parent">External Link</a></li> -->
+                </ul> <!-- /.menu -->
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+
+            </div> <!-- /.menu-wrapper -->
+
+            <!--Arrow Navigation-->
+            <a id="prevslide" class="load-item"><i class="fa fa-angle-left"></i></a>
+            <a id="nextslide" class="load-item"><i class="fa fa-angle-right"></i></a>
+
+        </div>
+    </div> <!-- /.col-md-4 -->
+    <div class="col-md-8 col-sm-12">
+        
+        <div id="menu-container">
+
+            <div id="menu-1" class="about content">
+                <div class="row">
+                    <ul class="tabs">
+                        <li class="col-md-4 col-sm-4">
+                            <a href="#tab1" class="icon-item">
+                                <i class="fa fa-info-circle"></i>
+                            </a> <!-- /.icon-item -->
+                        </li>
+                        <li class="col-md-4 col-sm-4">
+                            <a href="#tab2" class="icon-item">
+                                <i class="fa fa-star-half-o" ></i>
+                            </a> <!-- /.icon-item -->
+                        </li>
+                        <li class="col-md-4 col-sm-4">
+                            <a href="#tab3" class="icon-item">
+                                <i class="fa fa-users"></i>
+                            </a> <!-- /.icon-item -->
+                        </li>
+                    </ul> <!-- /.tabs -->
+                    <div class="col-md-12 col-sm-12">
+                        <div class="toggle-content text-center" id="tab1">
+                            <h3>Що ми є?</h3>
+                            <p>У всіх була така ситуація, коли знаєш що тобі потрібно, знаєш що я безліч шляхів отримати бажане, але не знаєш з чого почати і до кого звернутись. Або ж вам просто потрібно щось дізнатись, а йти і стояти в чергах під кабінетами у вас немає часу? Чи навіть не так, у вас є нереально крута ідея як зробити місто кращим, щось поліпшити для жителів міста і ви не знаєте якими інструментами це можна зробити? 
+                                <br>
+                                Чи можливо у вас є конкретні зауваження по роботі якихось організацій чи служб міста і ви знаєте як покращити їх роботу?
+                                <br>
+                            Тоді ви зайшли на правильний ресурс! VinVoice створено для жителів міста Вінниці щоб полегшити комунікації між різними структурними одиницями міста - Міська Рада, ЖЕКи міста, Громадські організації, Школи, Університети, заклади відпочинку, спортивні клуби, загалом Все місто буде тут!  VinVoice - це чат для вирішення існуючих проблем, розвитку та покращенню умови життя в нашому місті, обговоренню подій та суспільного життя!</p>
+                        </div>
+
+                        <div class="toggle-content text-center" id="tab2">
+                            <h3>Наша філософія</h3>
+                            <p>
+                                <ul style="text-align: left;">
+                                    <li>Ми допомогаємо міщанам спілкуватись з публічними організаціями не виходячи з дому</li>
+                                    <li>Комунікація між Вами та представником організації буде в режимі онлайн і Ви майже миттєво зможете дізнатись потрібну Вам інформацію</li>
+                                    <li>Ми хочемо зменшети кількість черг в установах міста, де це можливо</li>
+                                    <li>Ми хочемо дати Вам зручний інструмент знаходити щось нове для себе та розвиватись/li>
+                                        <li>І звісно ж, все що ми робитимемо - все для зручності проживання у місті</li>
+                                    </ul>
+                                    <br><br>
+                                    За допомогою сервісу, ми прагнимо підвищити комфорт проживання у місті. Вам більше не потрібно буде брати відгул на роботі щоб піти до прозорого офісу чи в ЖЕК або в будь яку іншу установу (зі списку що погодились з нами співпрацювати) щоб задати одне єдине запитання чи отримати якусь офіційну інформацію. 
+                                    <br>
+                                    Все що вам потрібно, так це зареєструватись на сайті (ми проти "мертвих душ" та роботів!), знайти організацію що вас цікавить та написати їм! І все, чекаєте на відповідь! А оскільки все відбувається в режимі реального часу, відповідь буде швидкою! 
+                                </p>
+                            </div>
+
+                            <div class="toggle-content text-center" id="tab3">
+                                <h3>Наша команда</h3>
+                                <p>Ну що ж, команда так собі і покищо не сяє здобутками і складається лише з однієї люди, що переповнена ентузіазмом, бажанням навчитись гарно кодити та покращити життя міста, країни та всього світу. </p>
+                                
+                                <br>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="member-item">
+                                            <div class="thumb">
+                                                <img src="images/team/member-1.jpg" alt="Tanya - Web Designer">
+                                            </div>
+                                            <h4>Володимир</h4>
+                                            <span>Web Developer, <br> Web Desinger, <br> Noob</span>
+                                        </div> <!-- /.member-item -->
+                                    </div> <!-- /.col-md-4 -->
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="member-item" style="text-align: left";>
+                                            <p> Мене звуть Коваль Володимир і мені 25 рочків. На даний момент, я працюю фахівцем з валідації у ПрАТ "Інфузія" (інформація для інформації :) ), професійно займаюсь спортом та щоночі намагаюсь навчитись писати гарний і структурований код. Як бачете, щось у мене вийшло, а щось ні. Але я планую докласти деяких зусиль для того, щоб цей ресурс запрацював і приносив користь. 
+                                                Я щиро вірю, що знайду однодумців та зможу покращити комфорт проживання не лише у нашому місті, а й як мінімум по всій країні. Ато 21 століття надворі, а довбана бюрократична система не дає людям бути щасливими та витрачати час на себе! 
+                                            </p>
+                                        </div> <!-- /.member-item -->
+                                    </div> <!-- /.col-md-4 -->
+                                    
+                                </div> <!-- /.row -->
+                            </div>
+                            
+                        </div>
+                        
+                    </div> <!-- /.row -->
+                </div> <!-- /.about -->
+                
+                <div id="menu-2" class="services content">
+                    <div class="row">
+                        <ul class="tabs">
+                            <li class="col-md-4 col-sm-4">
+                                <a href="#tab4" class="icon-item">
+                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                </a> <!-- /.icon-item -->
+                            </li>
+                            <li class="col-md-4 col-sm-4">
+                                <a href="#tab5" class="icon-item">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                </a> <!-- /.icon-item -->
+                            </li>
+                            <li class="col-md-4 col-sm-4">
+                                <a href="#tab6" class="icon-item">
+                                    <i class="fa fa-question" aria-hidden="true"></i>
+                                </a> <!-- /.icon-item -->
+                            </li>
+                        </ul> <!-- /.tabs -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="toggle-content text-center" id="tab4">
+                                <h3>Сервіси</h3>
+                                <p>У цьому розділі Ви можете обрати потрібний Вам відділ та звернутись до нього. Якщо Ви цікавитесь молодіжною мобільність, EVS тоді Вам необхідно шукати у розділі з громадськими організаціями, якщо ж Ви волієте просто поїхати відпочити деінде, оберіть когось із розділу туризм</p>
+                            </div>

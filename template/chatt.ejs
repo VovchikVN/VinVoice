@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VinChat beta</title>
+  <link rel="stylesheet" href="css/chatClient.css">
+  <link rel=icon href=images/favicon.png sizes="16x16" type="image/png">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">Введіть своє ім'я</h3>
+        <input class="usernameInput" type="text" maxlength="14" value="<%=  name %>" />
+      </div>
+    </li>
+  </ul>
+  <script src="js/vendor/jquery-1.10.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="js/chatClient.js"></script>
+</body>
+</html>

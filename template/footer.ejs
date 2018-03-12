@@ -1,0 +1,88 @@
+ <div class="container-fluid">   
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p id="footer-text">
+                
+                	Copyright &copy; 2017 <a href="/">VinVoice</a>. <br>Background photos by <a href="https://www.facebook.com/lyudmila.nikityuk?ref=brem">Lyudmila Nikityuk</a>
+                 
+                 </p>
+            </div><!-- /.footer --> 
+        </div>
+    </div> <!-- /.container-fluid -->
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+            
+			jQuery(function ($) {
+
+                $.supersized({
+
+                    // Functionality
+                    slide_interval: 3000, // Length between transitions
+                    transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 700, // Speed of transition
+
+                    // Components                           
+                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    slides: [ // Slideshow Images
+                        {
+                            image: 'images/PicsforVinVoice/1.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/2.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/3.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/4.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/5.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/6.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/7.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/8.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/9.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/10.jpg'
+                        }, {
+                            image: 'images/PicsforVinVoice/11.jpg'
+                        }
+
+                    ]
+
+                });
+            });
+            
+    </script>
+    
+    	<!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+       <!--  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  -->
+       <script  src="js/index.js"></script>
+
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+           function templatemo_map() {
+                $('.google-map').gmap3({
+                    marker:{
+                        address: '49.222977, 28.408664' 
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+            }
+        </script>
+</body>
+</html>
